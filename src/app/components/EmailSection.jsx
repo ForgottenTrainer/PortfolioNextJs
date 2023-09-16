@@ -1,31 +1,38 @@
 "use client";
 import Link from 'next/link';
-import React from 'react'
+import React, {useState} from 'react'
+
 
 const EmailSection = () => {
-    const handleSubmit = async () => {
+    const [email, setEmail] = useState(false)
+    const handleSubmit = async (e) => {
         e.preventDefault()
         const data = {
-            email: e.targe.email.value,
-            subject: e.targe.subject.value,
-            message: e.targe.message.value
+            email: e.target.email.value,
+            subject: e.target.subject.value,
+            message: e.target.message.value
         }
-        const JSONdata = JSON.stringify(data)
-        const endpoint = "/api/send"
+        
+        const JSONdata = JSON.stringify(data);
+        const endpoint = "/api/send";
         const options = {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
+                "Content-Type": "application/json",
             },
             body: JSONdata,
-        }
+        };
+        
         const response = await fetch(endpoint, options);
-        const resData = await response.json();
+        const resData = await response.json()
 
-        if(resData.status === 'success'){
-            console.log('Message sent')
+        if(response.status === 200){
+            console.log("enviado")
+            setEmail(true)
         }
+        
     }
+        
   return (
 
     <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
@@ -47,6 +54,16 @@ const EmailSection = () => {
         </div>
         <div className="">
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+                {
+                    email && (
+                    <div id="toast-simple" className="flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow dark:text-gray-400 dark:divide-gray-700 space-x dark:bg-gray-800" role="alert">
+                        <svg className="w-5 h-5 text-blue-600 dark:text-blue-500 rotate-45" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 17 8 2L9 1 1 19l8-2Zm0 0V9"/>
+                        </svg>
+                        <div className="pl-4 text-sm font-normal">Message sent successfully.</div>
+                    </div>
+                    )
+                }
                 <label htmlFor="email" type='email' className='text-white block text-sm font-medium'>Email</label>
                 <input type="email" id='email' required placeholder='hi@email.com' className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg w-full p-2.5'/>
 
@@ -58,6 +75,7 @@ const EmailSection = () => {
                     <textarea name='message' id='message' className='bg-[#18191E] border z-10 border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg w-full p-2.5'></textarea>
                 </div>
                 <button type='submit' className='z-10 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 text-white w-full'>Send Message</button>
+
             </form>
         </div>
     </section>
