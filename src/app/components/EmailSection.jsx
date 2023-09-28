@@ -43,40 +43,19 @@ const EmailSection = () => {
                 {" "}
             Let's connect and learn more about our products and services.
             </p>
-            <div className="socials flex flex-rows gap-2">
-                <Link href="" >
-                    GitHub
-                </Link>
-                <Link href="">
-                    Linkedin
-                </Link>
-            </div>
         </div>
         <div className="">
-            <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-                {
-                    email && (
-                    <div id="toast-simple" className="flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow dark:text-gray-400 dark:divide-gray-700 space-x dark:bg-gray-800" role="alert">
-                        <svg className="w-5 h-5 text-blue-600 dark:text-blue-500 rotate-45" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 17 8 2L9 1 1 19l8-2Zm0 0V9"/>
-                        </svg>
-                        <div className="pl-4 text-sm font-normal">Message sent successfully.</div>
-                    </div>
-                    )
-                }
-                <label htmlFor="email" type='email' className='text-white block text-sm font-medium'>Email</label>
-                <input type="email" id='email' required placeholder='hi@email.com' className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg w-full p-2.5'/>
-
-                <label htmlFor="subject" type='text' className='text-white block text-sm font-medium'>Subject</label>
-                <input type="text" id='subject' required placeholder='Hi, i need a landing page...' className='bg-[#18191E] z-10 border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg w-full p-2.5'/>
-
-                <div className="mb-6 z-10">
-                    <label htmlFor="message"  className='text-white block text-sm mb-3 font-medium'>Email</label>
-                    <textarea name='message' id='message' className='bg-[#18191E] border z-10 border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg w-full p-2.5'></textarea>
-                </div>
-                <button type='submit' className='z-10 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 text-white w-full'>Send Message</button>
-
-            </form>
+            <div className="flex justify-around bg-slate-800 rounded-full p-2">
+                <a href='https://github.com/ForgottenTrainer' className="mx-5">
+                    <img src="git.svg" alt="git" className='hover:bg-slate-200 bg-white rounded-full hover:ease-in-out' />
+                </a>
+                <a href='https://www.instagram.com/forgottent312/' className="mx-5">
+                    <img src="insta.svg" alt="git" className='bg-pink-500 hover:bg-pink-300 rounded-md hover:ease-in-out' />
+                </a>
+                <a href='https://www.linkedin.com/in/rogelio-gonz%C3%A1lez-p%C3%A9rez-891493212/' className="mx-5">
+                    <img src="link.svg" alt="git" className='bg-blue-500 hover:bg-blue-300 rounded-md hover:ease-in-out' />
+                </a>
+            </div>
         </div>
     </section>
 
