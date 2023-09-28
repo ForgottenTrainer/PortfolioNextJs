@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import NavLink from './NavLink'
 import { useState } from 'react';
-import { Bars3Icon, XmarkIcon } from "@heroicons/react/24/solid"
+import { Bars3Icon } from "@heroicons/react/24/solid"
 import MenuOverlay from './MenuOverlay';
 
 const navLinks = [
@@ -38,7 +38,10 @@ const Navbar = () => {
               </button>
             ) : (
               <button onClick={() => setNavbarOpen(false)} className='flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hover:border-white text-slate-200'>
-                <XmarkIcon className='h-5 w-5' />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
               </button>
             )
           }
