@@ -25,7 +25,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base  mb-6 lg:text-xl">Fullstack web developer passionate about the world of technology </p>
+          <p className="text-[#ADB7BE] text-base  mb-6 lg:text-xl">Fullstack web developer passionate about the world of technology and development</p>
           <div className="text-center sm:text-left">
             <a href='https://www.linkedin.com/in/rogelio-gonz%C3%A1lez-p%C3%A9rez-891493212/' className="w-full text-white sm:w-fit mb-3 px-6 py-3 rounded-full mr-4 bg-gradient-to-tl from-purple-900 via-indigo-700 via-blue-900 to-blue-400 hover:bg-slate-200 text-black">
               Hire me
