@@ -64,7 +64,7 @@ const projectsData = [
     description: "I developed a school management system with an elegant user interface using React and Laravel.",
     image: "/images/8.jpeg",
     tag: ["all", "web"],
-    link: "https://github.com/ForgottenTrainer/Sistema-inventario-Laravel"
+    link: "https://github.com/ForgottenTrainer/schoolSystemLaravelReact"
   },
   
 ]
