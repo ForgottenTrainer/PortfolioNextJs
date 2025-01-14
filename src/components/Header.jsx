@@ -41,7 +41,8 @@ const Header = () => {
               Computer System Engineer & <br /> Web Developer
             </motion.h1>
             <motion.div className="pt-5" variants={textVariant}>
-              <SocialMedia />
+              <SocialMedia /> 
+
             </motion.div>
           </motion.div>
 

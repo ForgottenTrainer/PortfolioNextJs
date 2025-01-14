@@ -13,7 +13,7 @@ const About = () => {
     <div className="lg:p-10 p-5" id="about">
       <div className="grid lg:grid-cols-2 gap-4">
         <motion.div
-          className="lg:pr-7"
+          className="lg:pr-7 flex flex-col items-start justify-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}

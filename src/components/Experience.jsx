@@ -55,8 +55,8 @@ const Experience = () => {
         </div>
 
         {/* Lista de experiencia */}
-        <div className="flex flex-col items-center justify-center">
-          <ol className="relative border-s border-gray-200">
+        <div className="flex flex-col ">
+          <ol className="relative border-s border-gray-200 items-center justify-center">
             {timelineItems.map((item, index) => (
               <motion.li
                 key={index}
@@ -83,6 +83,12 @@ const Experience = () => {
               </motion.li>
             ))}
           </ol>
+          <div className='pt-3 justify-start items-start '>
+            <a href='./rogerEng-cv.pdf' target="_blank" rel="noopener noreferrer" className="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            >
+                Download CV
+            </a>
+          </div>
         </div>
       </div>
     </div>
