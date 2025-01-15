@@ -72,7 +72,7 @@ const Projects = () => {
 
   return (
     <div className="pl-5 pr-5 lg:pl-10 lg:pr-10 pt-5 pb-5" id="projects">
-      <h3 className="text-3xl font-semibold mb-8">Selected Projects</h3>
+      <h3 className="text-4xl font-normal mb-8">Selected Projects</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <motion.div

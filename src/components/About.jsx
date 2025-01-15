@@ -20,7 +20,7 @@ const About = () => {
           variants={fadeInVariant}
         >
           <h3 className="font-light text-gray-500 pb-4">About Me</h3>
-          <h5 className="font-semibold text-3xl text-black">
+          <h5 className="font-normal text-5xl text-black">
             Design, Development and Network. <br /> All In One Place
           </h5>
           <p className="font-light text-gray-500 pt-4">
@@ -46,7 +46,7 @@ const About = () => {
               
               aria-controls="accordion-flush-body-1"
             >
-              <span className='text-black'>WEB APPLICATION</span>
+              <span className='text-black text-xl'>WEB APPLICATION</span>
 
             </button>
           </h2>
@@ -66,7 +66,7 @@ const About = () => {
               
               aria-controls="accordion-flush-body-2"
             >
-              <span className='text-black'>RESPONSIVE DESING</span>
+              <span className='text-black text-xl'>RESPONSIVE DESING</span>
             </button>
           </h2>
           
@@ -86,7 +86,7 @@ const About = () => {
              
               aria-controls="accordion-flush-body-3"
             >
-              <span className='text-black'>BACKEND DEVELOPMENT</span>
+              <span className='text-black text-xl'>BACKEND DEVELOPMENT</span>
 
             </button>
           </h2>

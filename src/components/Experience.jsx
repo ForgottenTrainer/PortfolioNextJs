@@ -43,7 +43,7 @@ const Experience = () => {
 
   return (
     <div className="mx-auto pl-5 pr-5 lg:pl-10 lg:pr-10 lg:pt-5" id="experience">
-      <h3 className="text-3xl pb-10 font-semibold">Experience</h3>
+      <h3 className="text-4xl pb-10 font-normal">Experience</h3>
       <div className="grid lg:grid-cols-2 gap-10 items-center">
         {/* Imagen */}
         <div className="flex justify-center">

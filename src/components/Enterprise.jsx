@@ -7,7 +7,6 @@ import Mysql from './../assets/mysql.png';
 import php from './../assets/php.png';
 import laravel from './../assets/laravel.png';
 import tailwind from './../assets/tailwind.png';
-import non from './../assets/html.png';
 
 const Enterprise = () => {
   return (
