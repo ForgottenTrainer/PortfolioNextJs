@@ -8,8 +8,8 @@ const Experience = () => {
       title: "Digital Family",
       description: [
         "Responsible for the administration and optimization of Zoho's CRM system, ensuring full functionality and customization to business needs.",
-        "Implemented automations within the CRM to improve workflows, reducing data processing time by 40% and increasing sales team efficiency.",
-        "Developed and delivered CRM system updates, including new features and modules that improved data capture and reporting by 50%."
+        "Implemented automations within the CRM to improve workflows, reducing data processing time by 20% and increasing sales team efficiency.",
+        "Developed and delivered CRM system updates, including new features and modules that improved data capture and reporting by 30%."
       ]
     },
     {
